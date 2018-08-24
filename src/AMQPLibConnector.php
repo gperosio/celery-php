@@ -95,7 +95,7 @@ class AMQPLibConnector extends AbstractAMQPConnector
 
         $ch->exchange_declare(
             $details['exchange'],    /* name */
-            'direct',                /* type */
+            $details['exchange_type'],                /* type */
             false,                   /* passive */
             true,                    /* durable */
             false                    /* auto_delete */
